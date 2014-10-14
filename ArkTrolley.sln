@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ArkTrolleyCore", "ArkTrolleyCore\ArkTrolleyCore.shproj", "{408EC027-217E-4A74-825B-A9073602E160}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkTrolleyAndroid", "ArkTrolleyAndroid\ArkTrolleyAndroid.csproj", "{10098966-9A0C-49D7-8F6D-1DC717DE9A0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10098966-9A0C-49D7-8F6D-1DC717DE9A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10098966-9A0C-49D7-8F6D-1DC717DE9A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10098966-9A0C-49D7-8F6D-1DC717DE9A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10098966-9A0C-49D7-8F6D-1DC717DE9A0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = ArkTrolleyAndroid\ArkTrolleyAndroid.csproj
+	EndGlobalSection
+EndGlobal

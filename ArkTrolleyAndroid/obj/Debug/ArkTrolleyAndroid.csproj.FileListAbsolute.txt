@@ -1,0 +1,47 @@
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\bin\Debug\ArkTrolleyAndroid.dll
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\bin\Debug\ArkTrolleyAndroid.pdb
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\bin\Debug\ArkTrolleyAndroid.dll.mdb
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\bin\Debug\ArkTrolley.ArkTrolley.apk
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\bin\Debug\ArkTrolley.ArkTrolley-Signed.apk
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\ArkTrolleyAndroid.dll
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\ArkTrolleyAndroid.pdb
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\android\bin\ArkTrolley.ArkTrolley.apk
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\values\strings.xml
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\icon.png
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\layout\loadingscreen.xml
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\bluesky.xml
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\layout\accountsmenuscreen.xml
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\akbuttonrec600x200.png
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\akbuttoncirc200.png
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\akbuttonoval600x200.png
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\akbuttonrec1000x600.png
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\akbuttonrec200x200.png
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\arkicon.png
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\thearktrolleylogo.png
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\thearktrolleytide.png
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\R.cs.flag
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\uploadflags.txt
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\ArkTrolleyAndroid.csprojResolveAssemblyReference.cache
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\ArkTrolleyAndroid.dll
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\bin\Debug\ArkTrolleyAndroid.dll
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\bin\Debug\ArkTrolleyAndroid.pdb
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\bin\Debug\ArkTrolleyAndroid.dll.mdb
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\bin\Debug\ArkTrolley.ArkTrolley.apk
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\bin\Debug\ArkTrolley.ArkTrolley-Signed.apk
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\ArkTrolleyAndroid.pdb
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\android\bin\ArkTrolley.ArkTrolley.apk
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\values\strings.xml
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\icon.png
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\layout\loadingscreen.xml
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\bluesky.xml
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\layout\accountsmenuscreen.xml
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\akbuttonrec600x200.png
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\akbuttoncirc200.png
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\akbuttonoval600x200.png
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\akbuttonrec1000x600.png
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\akbuttonrec200x200.png
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\arkicon.png
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\thearktrolleylogo.png
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\res\drawable\thearktrolleytide.png
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\R.cs.flag
+C:\Users\Jose Luna\Documents\Projects\ArkTrolley\ArkTrolleyAndroid\obj\Debug\uploadflags.txt

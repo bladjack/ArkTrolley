@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{408EC027-217E-4A74-825B-A9073602E160}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ArkTrolleyCore</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\BusinessLogic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\LocalStorage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\RemoteStorage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\UserClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\WebServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\SQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\LocalStorageConnection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\LocalUserClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Components\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Resources\" />
+    <Folder Include="$(MSBuildThisFileDirectory)References\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Resources\drawable\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Classes\" />
+  </ItemGroup>
+</Project>

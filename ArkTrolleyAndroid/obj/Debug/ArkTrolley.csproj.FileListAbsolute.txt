@@ -1,0 +1,17 @@
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolley\bin\Debug\ArkTrolley.dll
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolley\bin\Debug\ArkTrolley.pdb
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolley\bin\Debug\ArkTrolley.dll.mdb
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolley\bin\Debug\ArkTrolley.ArkTrolley.apk
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolley\bin\Debug\ArkTrolley.ArkTrolley-Signed.apk
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolley\obj\Debug\ArkTrolley.dll
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolley\obj\Debug\ArkTrolley.pdb
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolley\obj\Debug\android\bin\ArkTrolley.ArkTrolley.apk
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolley\obj\Debug\res\layout\main.xml
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolley\obj\Debug\res\values\strings.xml
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolley\obj\Debug\res\drawable\icon.png
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolley\obj\Debug\res\drawable\thearktrolleylogo.png
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolley\obj\Debug\res\drawable\thearktrolleytide.png
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolley\obj\Debug\res\layout\loadingscreen.xml
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolley\obj\Debug\res\layout\bluesky.xml
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolley\obj\Debug\R.cs.flag
+C:\Users\ASUS-K53\Documents\Projects\ArkTrolley\ArkTrolley\obj\Debug\uploadflags.txt
