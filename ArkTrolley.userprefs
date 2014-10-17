@@ -1,14 +1,6 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.API_Level_15_37_480x800" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ArkTrolleyAndroid\Classes\PresentationClass.cs">
-    <Files>
-      <File FileName="ArkTrolleyAndroid\MainActivity.cs" Line="1" Column="1" />
-      <File FileName="ArkTrolleyAndroid\AccountsMenuScreen.cs" Line="1" Column="1" />
-      <File FileName="ArkTrolleyAndroid\Classes\PresentationClass.cs" Line="19" Column="19" />
-      <File FileName="ArkTrolleyCore\Classes\LocalStorage.cs" Line="1" Column="1" />
-      <File FileName="ArkTrolleyCore\Classes\LocalUserClass.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

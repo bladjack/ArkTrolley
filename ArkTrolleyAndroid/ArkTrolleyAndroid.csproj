@@ -74,7 +74,4 @@
   </ItemGroup>
   <Import Project="..\ArkTrolleyCore\ArkTrolleyCore.projitems" Label="Shared" Condition="Exists('..\ArkTrolleyCore\ArkTrolleyCore.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
-  <ItemGroup>
-    <Folder Include="Classes\" />
-  </ItemGroup>
 </Project>
