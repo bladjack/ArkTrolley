@@ -14,9 +14,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)Classes\RemoteStorage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\UserClass.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\WebServices.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Classes\SQLite.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\LocalStorageConnection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Classes\LocalUserClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\SQLite.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Components\" />

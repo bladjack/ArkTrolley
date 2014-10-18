@@ -11,8 +11,10 @@ namespace ArkTrolley.iPhone.Views
 	public abstract class BaseViewController : MvxViewController
 	{
 		public string PageTitle{ get; set; }
+		public int TopMargin{ get; set; }
 		public UIView Logo{ get; set;}
 		public UIView Flood{ get; set;}
+		public UIImageView BackImage{ get; set;}
 
 		public BaseViewController (string viewName,string title,NSBundle bundle) : base (viewName, bundle)
 		{
@@ -46,9 +48,10 @@ namespace ArkTrolley.iPhone.Views
 
 		public void Initilized()
 		{
+			TopMargin = 100;
 			Logo = new UIView ();
-			Logo.Frame = new RectangleF (0, 20, View.Frame.Width, 135/2);
 
+			Logo.Frame = new RectangleF (0, 20, View.Frame.Width, 135/2);
 
 			var logoImage = new UIImageView (UIImage.FromBundle ("Common/ArkTrolley.png"));
 			var logoTides = new UIImageView (UIImage.FromBundle ("Common/Ola.png"));
@@ -60,6 +63,8 @@ namespace ArkTrolley.iPhone.Views
 			logoTides.BackgroundColor= CustomUIColor.FromHexString ("#AFE2FF");
 
 
+
+
 			Logo.Add (logoImage);
 			Logo.Add (logoTides);
 
@@ -69,14 +74,20 @@ namespace ArkTrolley.iPhone.Views
 			floodImage.ContentMode= UIViewContentMode.ScaleAspectFill;
 
 			 
+			var bounds=UIScreen.MainScreen.Bounds;
 			Flood = new UIView ();
-			Flood.Frame = new RectangleF (0 , View.Frame.Height - 124 , View.Frame.Width, 36);
+			Flood.Frame = new RectangleF (0 , View.Frame.Height - 36 , View.Frame.Width, 36);
 			Flood.BackgroundColor= CustomUIColor.FromHexString ("#AFE2FF");
 			Flood.AddSubview (floodImage);
 		}
 
 		public void AddLogos()
 		{
+			BackImage = new UIImageView ();
+			BackImage.Frame = new RectangleF (0, 00, View.Frame.Width, UIScreen.MainScreen.Bounds.Bottom- Logo.Center.Y- 50 );
+			BackImage.BackgroundColor = CustomUIColor.FromHexString ("#AFE2FF");
+
+			View.AddSubview (BackImage);
 			View.AddSubview (Logo);
 			View.AddSubview (Flood);
 		}
@@ -90,7 +101,7 @@ namespace ArkTrolley.iPhone.Views
 				Text = name,
 				TextColor = CustomUIColor.FromHexString(colorCode),
 				Font = UIFont.FromName(fontName, fontSize),
-				AdjustsFontSizeToFitWidth = true,
+				AdjustsFontSizeToFitWidth = false,
 				LineBreakMode = UILineBreakMode.TailTruncation,
 				Lines = 1
 			};

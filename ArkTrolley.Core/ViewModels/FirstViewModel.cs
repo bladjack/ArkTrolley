@@ -11,5 +11,10 @@ namespace ArkTrolley.Core.ViewModels
 			get { return _hello; }
 			set { _hello = value; RaisePropertyChanged(() => Hello); }
 		}
+
+		public FirstViewModel()
+		{
+
+		}
     }
 }

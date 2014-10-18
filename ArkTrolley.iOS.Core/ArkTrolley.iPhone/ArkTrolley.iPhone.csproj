@@ -138,6 +138,10 @@
       <DependentUpon>FirstView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\BaseViewController.cs" />
+    <Compile Include="Views\MainView.cs" />
+    <Compile Include="Views\MainView.designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <ItemGroup>
@@ -156,5 +160,6 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Views\FirstView.xib" />
+    <InterfaceDefinition Include="Views\MainView.xib" />
   </ItemGroup>
 </Project>

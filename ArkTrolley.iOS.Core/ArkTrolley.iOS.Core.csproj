@@ -40,6 +40,7 @@
     <Compile Include="UserControls\CustomTapped.cs" />
     <Compile Include="UserControls\AnimatedImageView.cs" />
     <Compile Include="AppHelper\BytesToImageConverter.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
