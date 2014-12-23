@@ -7,14 +7,13 @@ using MonoTouch.UIKit;
 using ArkTrolley.iOS.Core.UserControls;
 using ArkTrolley.iOS.Core.AppHelper;
 using ArkTrolley.iOS.Core.ViewModels;
+using ArkTrolley.Core.AppHelper;
+using System.Threading.Tasks;
 
 namespace ArkTrolley.iPhone.Views
 {
 	public partial class MainView : BaseViewController
 	{
-		private UIView AnotherUser;
-		private UIView NewAccount;
-
 		private UIScrollView scrollView;
 
 		protected MainViewModel PageViewModel {
@@ -32,85 +31,96 @@ namespace ArkTrolley.iPhone.Views
 
 		}
 
-		public override void StartView ()
+		public async override void StartView ()
 		{
-			scrollView = new UIScrollView {
-				Frame = new RectangleF (0, TopMargin + 120, View.Frame.Width, 200),
-				BackgroundColor = CustomUIColor.FromHexString ("#00ffffff"),
-				AutoresizingMask = UIViewAutoresizing.FlexibleWidth,
-				AlwaysBounceVertical = false,
-				ShowsVerticalScrollIndicator = false
-			};
-
+			scrollView = new UIScrollView ();
+			if (UIScreen.MainScreen.Bounds.Height > 500) {
+				scrollView.Frame = new RectangleF (0, TopMargin + 120, ScreenWidth, ScreenHeight - (TopMargin + 120+ 150));
+			}else {
+				scrollView.Frame = new RectangleF (0, TopMargin + 100, ScreenWidth, ScreenHeight - (TopMargin + 100+150));
+			}
+			scrollView.BackgroundColor = CustomUIColor.FromHexString ("#00ffffff");
+			scrollView.AutoresizingMask = UIViewAutoresizing.FlexibleWidth;
+			scrollView.AlwaysBounceVertical = false;
+			scrollView.ShowsVerticalScrollIndicator = false;
+			
 
 			AddLogos ();
 
 			AddNewUser ();
 
-			var maxHeight = AddPreviousUser ();
+			var maxHeight = await AddPreviousUser ();
 
 			scrollView.ContentSize = new SizeF (0, maxHeight+ 80);
 
 			View.AddSubview (scrollView);
 		}
 
-		private void AddNewUser()
+		private async void AddNewUser()
 		{
-			var newUser = UserInfoHub (
+			var newUser = await UserInfoHub (
 				UIImage.FromBundle ("Common/Ark_lg.png"), 
 				"Another user",
-				"Didn't login on this device before."
+				"Didn't login on this device before.",
+				string.Empty
 			);	
+			if (UIScreen.MainScreen.Bounds.Height > 500) {
+				newUser.Frame = new RectangleF (10, TopMargin + 25, ScreenWidth-20, 100);
+			} else {
+				newUser.Frame = new RectangleF (10, TopMargin + 15, ScreenWidth-20, 100);
+			}
 
-			newUser.Frame = new RectangleF (10, TopMargin + 25, 300, 100);
+			newUser.UserInteractionEnabled=true;
+
+			newUser.AddGestureRecognizer (new UITapGestureRecognizer (() => {
+				PageViewModel.NavigateToLoginScreen();
+			}));
+
 			View.AddSubview (newUser);
 		}
 
-		private int AddPreviousUser()
+		private async Task<int> AddPreviousUser()
 		{
 			int i = 0;
 			int topMargin = 0;
 			foreach (var item in PageViewModel.PreviousLoginUser) {
 
-				var newUser1 = UserInfoHub  (
-					UIImage.FromBundle ("Common/Ark_lg.png"), 
+				var newUser1 = await UserInfoHub (
+					               UIImage.FromBundle ("Common/Ark_lg.png"), 
 					item.str_name,
-					item.str_email
-				);	
-				topMargin= 10 + 105*i;
+					               item.str_email,
+					item.int_id );	
+				if (UIScreen.MainScreen.Bounds.Height > 500) {
+					topMargin = 10 + 105 * i;
+				} else {
+					topMargin = 10 + 90 * i;
+				}
+
 				newUser1.Frame = new RectangleF (10, topMargin, 300, 100);
 				scrollView.AddSubview (newUser1);
+
+				newUser1.UserInteractionEnabled = true;
+
+				newUser1.AddGestureRecognizer (new UITapGestureRecognizer (() => {
+					PageViewModel.NavigatedToStorePickList(item);
+				}));
 				i++;
 			}
 
 
-//			var newUser1 = UserInfoHub  (
-//				UIImage.FromBundle ("Common/Ark_lg.png"), 
-//				"Another user",
-//				"Didn't login on this device before."
-//			);	
-//
-//			newUser1.Frame = new RectangleF (10, TopMargin + 130, 300, 100);
-//			View.AddSubview (newUser1);
-//
-//			var newUser2 = UserInfoHub  (
-//				UIImage.FromBundle ("Common/Ark_lg.png"), 
-//				"Another user",
-//				"Didn't login on this device before."
-//			);	
-//
-//			newUser2.Frame = new RectangleF (10, TopMargin + 235, 300, 100);
-//			View.AddSubview (newUser2);
-//
-			var newUser3 = UserInfoHub2  ();	
-				
-			newUser3.Frame = new RectangleF (10, TopMargin + 340, 300, 100);
+			var newUser3 = UserInfoHub2 ();	
+			if (UIScreen.MainScreen.Bounds.Height > 500) {
+				newUser3.Frame = new RectangleF (10, ScreenHeight - 120, ScreenWidth - 20, 100);
+			} else {
+				newUser3.Frame = new RectangleF (10, ScreenHeight - 110, ScreenWidth - 20, 100);
+			}
+
 			View.AddSubview (newUser3);
 
 			return topMargin;
 		}
 
-		private UIView UserInfoHub(UIImage userImage, string userName, string email)
+		private async Task<UIView> UserInfoHub(UIImage userImage, string userName, string email, string id)
 		{
 			var userView = new UIView ();
 
@@ -120,17 +130,25 @@ namespace ArkTrolley.iPhone.Views
 			var userViewRectangle = new UIImageView (UIImage.FromBundle ("Common/Rect.png"));
 			userViewRectangle.Frame = new RectangleF (86, 10, 200, 55);
 
-			var userImageView = new UIImageView (userImage); 
+			var userImageView = new UIImageView (); 
 				//new UIImageView (UIImage.FromBundle ("Common/Ark_lg.png"));
+			UIImage downloadimage=null;
+			try{
+				downloadimage= await BaseViewController.LoadImage(SharedData.CurrentConfigurationData.str_web_service_root+ SharedData.CurrentConfigurationData.str_users_pictures_path+ id+".jpg");
+			}catch{
+			}
+			if (downloadimage == null) {
+				userImageView.Image = userImage;
+			} else {
+				userImageView.Image = downloadimage;
+			}
+
 			userImageView.Frame = new RectangleF (20, 7, 60, 61);
-
-
-
-			var userNameLabel = CreateLebel (userName, 20.0f);
-			userNameLabel.Frame = new RectangleF (95, 15, 180, 25);
+			var userNameLabel = CreateLebel (userName, 12.0f);
+			userNameLabel.Frame = new RectangleF (95, 14, 180, 25);
 		
 
-			var emailLabel = CreateLebel (email, 12.0f);
+			var emailLabel = CreateLebel (email, 10.0f);
 			emailLabel.Frame = new RectangleF (95, 38, 180, 25);
 		
 
@@ -189,7 +207,7 @@ namespace ArkTrolley.iPhone.Views
 
 
 
-			var email = CreateLebel ("Didn't login on this device beforekajdhkjahsdkjahskjh", 12.0f);
+			var email = CreateLebel ("Didn't login on this device before", 12.0f);
 			email.Frame = new RectangleF (95, 38, 180, 25);
 
 
@@ -201,7 +219,21 @@ namespace ArkTrolley.iPhone.Views
 			userView.AddSubview (createNewAccount);
 			userView.AddSubview (registerNewStore);
 
+			createNewAccount.UserInteractionEnabled = true;
 
+			createNewAccount.AddGestureRecognizer (new UITapGestureRecognizer (() => {
+				var displayBound = UIScreen.MainScreen.Bounds;
+				int height = (int)(displayBound.Height) - TopMargin;
+				var signUpView = new SignupView(new RectangleF(displayBound.X,TopMargin, displayBound.Width, height), this.NavigationController);
+				this.View.Add (signUpView);
+			}));
+
+			registerNewStore.UserInteractionEnabled = true;
+
+			registerNewStore.AddGestureRecognizer (new UITapGestureRecognizer (() => {
+				PageViewModel.NavigatedAppWebView();
+			}));
+				
 			//userView.AddSubview (userName);
 			//userView.AddSubview (email);
 

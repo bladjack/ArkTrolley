@@ -1,6 +1,18 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ArkTrolley.Android/Resources/values/MvxBindingAttributes.xml">
+    <Files>
+      <File FileName="ArkTrolley.Android/Setup.cs" Line="1" Column="1" />
+      <File FileName="ArkTrolley.Android/SplashScreen.cs" Line="1" Column="1" />
+      <File FileName="ArkTrolley.Android/packages.config" Line="1" Column="1" />
+      <File FileName="ArkTrolley.Android/LinkerPleaseInclude.cs" Line="1" Column="1" />
+      <File FileName="ArkTrolley.Android/DebugTrace.cs" Line="1" Column="1" />
+      <File FileName="ArkTrolley.Android.Core/App.cs" Line="10" Column="10" />
+      <File FileName="ArkTrolley.Android/Views/FirstView.cs" Line="2" Column="2" />
+      <File FileName="ArkTrolley.Android/Resources/layout/FirstView.axml" Line="16" Column="16" />
+      <File FileName="ArkTrolley.Android/Resources/values/MvxBindingAttributes.xml" Line="13" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

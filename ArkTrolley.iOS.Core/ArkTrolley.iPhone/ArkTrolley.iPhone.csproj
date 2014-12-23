@@ -22,6 +22,9 @@
     <MtouchLink>None</MtouchLink>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchDebug>true</MtouchDebug>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>i386</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -42,9 +45,14 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: Hakim Ali (2X5FQ3JE4F)</CodesignKey>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+    <CodesignProvision>02c49be2-c049-48f3-bbcd-854ba7167093</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
@@ -52,9 +60,16 @@
     <OutputPath>bin\iPhone\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: Hakim Ali (2X5FQ3JE4F)</CodesignKey>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>ARMv7</MtouchArch>
+    <BuildIpa>true</BuildIpa>
+    <CodesignProvision>a1ceaba2-7914-495a-a4a7-d34933488ee5</CodesignProvision>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
     <DebugType>full</DebugType>
@@ -105,6 +120,28 @@
     <Reference Include="Cirrious.MvvmCross">
       <HintPath>..\..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.2.1\lib\MonoTouch\Cirrious.MvvmCross.dll</HintPath>
     </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Sqlite">
+      <HintPath>..\..\packages\MvvmCross.HotTuna.Plugin.Sqlite.3.2.1\lib\MonoTouch\Cirrious.MvvmCross.Plugins.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Sqlite.Touch">
+      <HintPath>..\..\packages\MvvmCross.HotTuna.Plugin.Sqlite.3.2.1\lib\MonoTouch\Cirrious.MvvmCross.Plugins.Sqlite.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Location">
+      <HintPath>..\..\packages\MvvmCross.HotTuna.Plugin.Location.3.2.1\lib\MonoTouch\Cirrious.MvvmCross.Plugins.Location.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Location.Touch">
+      <HintPath>..\..\packages\MvvmCross.HotTuna.Plugin.Location.3.2.1\lib\MonoTouch\Cirrious.MvvmCross.Plugins.Location.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Messenger">
+      <HintPath>..\..\packages\MvvmCross.HotTuna.Plugin.Messenger.3.2.1\lib\MonoTouch\Cirrious.MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile">
+      <HintPath>..\..\Components\zxing.net.mobile-1.4.7\lib\ios\ZXing.Net.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.monotouch">
+      <HintPath>..\..\Components\zxing.net.mobile-1.4.7\lib\ios\zxing.monotouch.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
@@ -119,6 +156,83 @@
     <BundleResource Include="Resources\Common\Rect.png" />
     <BundleResource Include="Resources\Common\Store.png" />
     <BundleResource Include="Resources\Common\tide.gif" />
+    <BundleResource Include="Resources\Login\Arroba.png" />
+    <BundleResource Include="Resources\Login\BoxRaya.png" />
+    <BundleResource Include="Resources\Login\BoxSmall.png" />
+    <BundleResource Include="Resources\Login\BoxW.png" />
+    <BundleResource Include="Resources\Login\Prestas.png" />
+    <BundleResource Include="Resources\Login\RecTex.png" />
+    <BundleResource Include="Resources\Login\Box.png" />
+    <BundleResource Include="Resources\Login\selectedCheckBox.png" />
+    <BundleResource Include="Resources\Login\unselectedbox.png" />
+    <BundleResource Include="Resources\Login\button.png" />
+    <BundleResource Include="Resources\Login\CancelBut.png" />
+    <BundleResource Include="Resources\Login\CancelButOv.png" />
+    <BundleResource Include="Resources\Login\LoginBut.png" />
+    <BundleResource Include="Resources\Login\LoginButOv.png" />
+    <BundleResource Include="Resources\PickStore\BoxStore.png" />
+    <BundleResource Include="Resources\PickStore\CancelBut.png" />
+    <BundleResource Include="Resources\PickStore\CancelButOv.png" />
+    <BundleResource Include="Resources\PickStore\LineBlue.png" />
+    <BundleResource Include="Resources\PickStore\LogOutBut.png" />
+    <BundleResource Include="Resources\PickStore\PickStore.png" />
+    <BundleResource Include="Resources\PickStore\RectStore.png" />
+    <BundleResource Include="Resources\PickStore\RefreshBut.png" />
+    <BundleResource Include="Resources\PickStore\RefreshButOv.png" />
+    <BundleResource Include="Resources\PickStore\UpdateBut.png" />
+    <BundleResource Include="Resources\PickStore\UpdateButOv.png" />
+    <BundleResource Include="Resources\Profile\ArkBut.png" />
+    <BundleResource Include="Resources\Profile\BackMenuBut.png" />
+    <BundleResource Include="Resources\Profile\BarCodeBut.png" />
+    <BundleResource Include="Resources\Profile\ListBut.png" />
+    <BundleResource Include="Resources\Profile\ProfileBut.png" />
+    <BundleResource Include="Resources\Profile\RecipesBut.png" />
+    <BundleResource Include="Resources\Profile\Rect.png" />
+    <BundleResource Include="Resources\Profile\SearchBut.png" />
+    <BundleResource Include="Resources\CurrentTrolley\BlueLine.png" />
+    <BundleResource Include="Resources\CurrentTrolley\Box.png" />
+    <BundleResource Include="Resources\CurrentTrolley\CancelBut.png" />
+    <BundleResource Include="Resources\CurrentTrolley\CancelButOv.png" />
+    <BundleResource Include="Resources\CurrentTrolley\CurrentTrolleyTitle.png" />
+    <BundleResource Include="Resources\CurrentTrolley\FinishBut.png" />
+    <BundleResource Include="Resources\CurrentTrolley\FinishButOv.png" />
+    <BundleResource Include="Resources\CurrentTrolley\LogOutBut.png" />
+    <BundleResource Include="Resources\CurrentTrolley\RectBox.png" />
+    <BundleResource Include="Resources\CurrentTrolley\RedX.png" />
+    <BundleResource Include="Resources\CurrentTrolley\UpdateBut.png" />
+    <BundleResource Include="Resources\CurrentTrolley\UpdateButOv.png" />
+    <BundleResource Include="Resources\CurrentTrolley\OverBackMenu.png" />
+    <BundleResource Include="Resources\Common\my_lists_title_regular.png" />
+    <BundleResource Include="Resources\Profile\my_tickets_button_regular.png" />
+    <BundleResource Include="Resources\CurrentTrolley\save_recipe_button_picture_regular.png" />
+    <BundleResource Include="Resources\Login\logout_button_picture.png" />
+    <BundleResource Include="Resources\Common\user_profile_title_picture_regular.png" />
+    <BundleResource Include="Resources\Common\save_user_button_picture_regular.png" />
+    <BundleResource Include="Resources\Common\browse_picture_button_picture_regular.png" />
+    <BundleResource Include="Resources\Common\cancel_button_picture_regular.png" />
+    <BundleResource Include="Resources\Common\my_profile_button_regular.png" />
+    <BundleResource Include="Resources\CurrentTrolley\finish_current_trolley_canceled_button_picture_regular.png" />
+    <BundleResource Include="Resources\CurrentTrolley\finish_current_trolley_paid_button_picture_regular.png" />
+    <BundleResource Include="Resources\Common\search_button_picture_regular.png" />
+    <BundleResource Include="Resources\Common\search_item_title_picture_regular.png" />
+    <BundleResource Include="Resources\Common\clearance_price_icon_picture_regular.png" />
+    <BundleResource Include="Resources\Common\coupon_price_icon_picture_regular.png" />
+    <BundleResource Include="Resources\Common\down_arrow_icon_picture_regular.png" />
+    <BundleResource Include="Resources\Common\left_arrow_icon_picture_regular.png" />
+    <BundleResource Include="Resources\Common\right_arrow_icon_picture_regular.png" />
+    <BundleResource Include="Resources\Common\special_price_icon_picture_regular.png" />
+    <BundleResource Include="Resources\Common\up_arrow_icon_picture_regular.png" />
+    <BundleResource Include="Resources\Common\items_comparison_title_regular.png" />
+    <BundleResource Include="Resources\Common\add_button_picture_regular.png" />
+    <BundleResource Include="Resources\Common\save_recipe_button_picture_regular.png" />
+    <BundleResource Include="Resources\Icon.png" />
+    <BundleResource Include="Resources\Icon%402x.png" />
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+    <BundleResource Include="Resources\Icon-Small.png" />
+    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Default%402x.png" />
+    <BundleResource Include="Resources\Icon-Small%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -142,6 +256,29 @@
     <Compile Include="Views\MainView.designer.cs">
       <DependentUpon>MainView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\LoginView.cs" />
+    <Compile Include="Views\LoginView.designer.cs">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PickStoreView.cs" />
+    <Compile Include="Views\PickStoreView.designer.cs">
+      <DependentUpon>PickStoreView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProfileView.cs" />
+    <Compile Include="Views\ProfileView.designer.cs">
+      <DependentUpon>ProfileView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bootstrap\SqlitePluginBootstrap.cs" />
+    <Compile Include="Bootstrap\LocationPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
+    <Compile Include="Views\SignupView.cs" />
+    <Compile Include="Views\SignupView.designer.cs">
+      <DependentUpon>SignupView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AppWebView.cs" />
+    <Compile Include="Views\AppWebView.designer.cs">
+      <DependentUpon>AppWebView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
   <ItemGroup>
@@ -153,13 +290,33 @@
       <Project>{1B74188D-BEDD-4CB9-AA26-429CBE1364BC}</Project>
       <Name>ArkTrolley.iOS.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\ArkTrolley.WebService\ArkTrolley.WebService.csproj">
+      <Project>{4FD86A32-00C8-4FF5-BB0D-0AA6FD383F1F}</Project>
+      <Name>ArkTrolley.WebService</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="Resources\Common\" />
+    <Folder Include="Resources\Login\" />
+    <Folder Include="Resources\PickStore\" />
+    <Folder Include="Resources\Profile\" />
+    <Folder Include="UserControls\" />
+    <Folder Include="Resources\CurrentTrolley\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Views\FirstView.xib" />
     <InterfaceDefinition Include="Views\MainView.xib" />
+    <InterfaceDefinition Include="Views\LoginView.xib" />
+    <InterfaceDefinition Include="Views\PickStoreView.xib" />
+    <InterfaceDefinition Include="Views\ProfileView.xib" />
+    <InterfaceDefinition Include="Views\SignupView.xib" />
+    <InterfaceDefinition Include="Views\AppWebView.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="zxing.net.mobile">
+      <Version>1.4.7</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
   </ItemGroup>
 </Project>

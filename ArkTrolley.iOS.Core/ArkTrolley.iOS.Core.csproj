@@ -35,12 +35,37 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="App.cs" />
     <Compile Include="ViewModels\FirstViewModel.cs" />
-    <Compile Include="AppHelper\AppHelper.cs" />
     <Compile Include="UserControls\ConfizTile.cs" />
     <Compile Include="UserControls\CustomTapped.cs" />
     <Compile Include="UserControls\AnimatedImageView.cs" />
     <Compile Include="AppHelper\BytesToImageConverter.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="AppHelper\CustomUIColor.cs" />
+    <Compile Include="UserControls\CheckBox.cs" />
+    <Compile Include="ViewModels\PickStoreViewModel.cs" />
+    <Compile Include="ViewModels\ProfileViewModel.cs" />
+    <Compile Include="Bootstrap\SqlitePluginBootstrap.cs" />
+    <Compile Include="AppHelper\AppMessageDialog.cs" />
+    <Compile Include="Bootstrap\LocationPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
+    <Compile Include="ViewModels\SignupViewModel.cs" />
+    <Compile Include="ViewModels\AppWebViewModel.cs" />
+    <Compile Include="AppHelper\DeviceInfoService.cs" />
+    <Compile Include="UserControls\CurrentTrolleyView.cs" />
+    <Compile Include="UserControls\FinishedCurrentTrolleyView.cs" />
+    <Compile Include="UserControls\LoadingOverlay.cs" />
+    <Compile Include="UserControls\MyListView.cs" />
+    <Compile Include="UserControls\MyRecipesView.cs" />
+    <Compile Include="UserControls\MySelectedList.cs" />
+    <Compile Include="UserControls\MySelectedRecipes.cs" />
+    <Compile Include="UserControls\MySelectedTicket.cs" />
+    <Compile Include="UserControls\MyTicketView.cs" />
+    <Compile Include="AppHelper\UtilityMethods.cs" />
+    <Compile Include="UserControls\NewUserView.cs" />
+    <Compile Include="UserControls\SearchView.cs" />
+    <Compile Include="UserControls\ItemsComparisionView.cs" />
+    <Compile Include="UserControls\CreateRecipesView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -71,6 +96,28 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
+    <Reference Include="Cirrious.MvvmCross.Plugins.Sqlite">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Sqlite.3.2.1\lib\MonoTouch\Cirrious.MvvmCross.Plugins.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Sqlite.Touch">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Sqlite.3.2.1\lib\MonoTouch\Cirrious.MvvmCross.Plugins.Sqlite.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Location">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Location.3.2.1\lib\MonoTouch\Cirrious.MvvmCross.Plugins.Location.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Location.Touch">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Location.3.2.1\lib\MonoTouch\Cirrious.MvvmCross.Plugins.Location.Touch.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Messenger">
+      <HintPath>..\packages\MvvmCross.HotTuna.Plugin.Messenger.3.2.1\lib\MonoTouch\Cirrious.MvvmCross.Plugins.Messenger.dll</HintPath>
+    </Reference>
+    <Reference Include="ZXing.Net.Mobile">
+      <HintPath>..\Components\zxing.net.mobile-1.4.7\lib\ios\ZXing.Net.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.monotouch">
+      <HintPath>..\Components\zxing.net.mobile-1.4.7\lib\ios\zxing.monotouch.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ToDo-MvvmCross\_ Touch UI.txt" />
@@ -81,9 +128,19 @@
       <Project>{54BBF508-78AB-49BE-A1DB-116D7904A9CE}</Project>
       <Name>ArkTrolley.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ArkTrolley.WebService\ArkTrolley.WebService.csproj">
+      <Project>{4FD86A32-00C8-4FF5-BB0D-0AA6FD383F1F}</Project>
+      <Name>ArkTrolley.WebService</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AppHelper\" />
     <Folder Include="UserControls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="zxing.net.mobile">
+      <Version>1.4.7</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
   </ItemGroup>
 </Project>

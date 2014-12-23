@@ -1,19 +1,68 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone6.8.0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ArkTrolley.iOS.Core/ArkTrolley.iPhone/Views/FirstView.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ArkTrolley.iOS.Core/ArkTrolley.iPhone/Views/BaseViewController.cs">
     <Files>
-      <File FileName="ArkTrolley.Core/ViewModels/MainViewModel.cs" Line="4" Column="4" />
-      <File FileName="ArkTrolley.iOS.Core/ArkTrolley.iPhone/Views/BaseViewController.cs" Line="72" Column="72" />
-      <File FileName="ArkTrolley.iOS.Core/ArkTrolley.iPhone/Views/MainView.cs" Line="8" Column="8" />
-      <File FileName="ArkTrolley.iOS.Core/UserControls/ConfizTile.cs" Line="12" Column="12" />
-      <File FileName="ArkTrolley.iOS.Core/ViewModels/MainViewModel.cs" Line="70" Column="70" />
-      <File FileName="ArkTrolley.iOS.Core/ArkTrolley.iPhone/Views/FirstView.cs" Line="4" Column="4" />
-      <File FileName="ArkTrolley.iOS.Core/App.cs" Line="10" Column="10" />
+      <File FileName="ArkTrolley.iOS.Core/ArkTrolley.iPhone/Views/LoginView.cs" Line="1" Column="1" />
+      <File FileName="ArkTrolley.iOS.Core/ArkTrolley.iPhone/Views/BaseViewController.cs" Line="68" Column="68" />
+      <File FileName="ArkTrolley.iOS.Core/ArkTrolley.iPhone/Main.cs" Line="1" Column="1" />
+      <File FileName="ArkTrolley.iOS.Core/ArkTrolley.iPhone/Views/SignupView.cs" Line="1" Column="1" />
+      <File FileName="ArkTrolley.iOS.Core/UserControls/CreateRecipesView.cs" Line="1" Column="1" />
+      <File FileName="ArkTrolley.iOS.Core/UserControls/SearchView.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/ArkTrolley.iPhone/Views/MainView.cs" line="52" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/UserControls/CheckBox.cs" line="34" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/UserControls/CheckBox.cs" line="38" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/UserControls/CheckBox.cs" line="39" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/UserControls/CheckBox.cs" line="15" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/UserControls/CheckBox.cs" line="14" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.WebService/Services/ClientHandler.cs" line="55" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.WebService/Services/ClientHandler.cs" line="68" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/ArkTrolley.iPhone/Views/LoginView.cs" line="242" column="35" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.Core/ViewModels/LoginViewModel.cs" line="62" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/ViewModels/MainViewModel.cs" line="50" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/ViewModels/MainViewModel.cs" line="54" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.WebService/Services/ClientHandler.cs" line="78" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.WebService/Services/ClientHandler.cs" line="92" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.WebService/Services/ClientHandler.cs" line="76" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.Core/ViewModels/ProfileViewModel.cs" line="47" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.Core/ViewModels/ProfileViewModel.cs" line="39" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/ArkTrolley.iPhone/UserControls/CurrentTrolleyView.cs" line="179" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/ArkTrolley.iPhone/UserControls/CurrentTrolleyView.cs" line="190" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/ArkTrolley.iPhone/UserControls/MyListView.cs" line="241" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/ArkTrolley.iPhone/UserControls/MyListView.cs" line="242" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/ArkTrolley.iPhone/UserControls/MyListView.cs" line="53" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/ArkTrolley.iPhone/UserControls/MyListView.cs" line="46" column="19" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/ArkTrolley.iPhone/UserControls/MyListView.cs" line="97" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/ArkTrolley.iPhone/UserControls/MyListView.cs" line="86" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/UserControls/MyListView.cs" line="223" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.Core/ViewModels/LoginViewModel.cs" line="125" column="58" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.WebService/Services/ClientHandler.cs" line="97" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.WebService/Services/ClientHandler.cs" line="101" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.WebService/Services/ClientHandler.cs" line="100" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.WebService/HttpClientHandler/HttpClientController.cs" line="148" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.WebService/HttpClientHandler/HttpClientController.cs" line="152" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.WebService/HttpClientHandler/HttpClientController.cs" line="151" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.WebService/HttpClientHandler/HttpClientController.cs" line="92" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/UserControls/FinishedCurrentTrolleyView.cs" line="120" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.Core/ViewModels/ProfileViewModel.cs" line="269" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/UserControls/CurrentTrolleyView.cs" line="151" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/ArkTrolley.iPhone/Views/ProfileView.cs" line="70" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.Core/ViewModels/ProfileViewModel.cs" line="143" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.Core/ViewModels/ProfileViewModel.cs" line="144" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/UserControls/CreateRecipesView.cs" line="63" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/UserControls/CreateRecipesView.cs" line="292" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.Core/ViewModels/ProfileViewModel.cs" line="328" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.Core/ViewModels/ProfileViewModel.cs" line="320" column="57" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/UserControls/CreateRecipesView.cs" line="168" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.Core/ViewModels/ProfileViewModel.cs" line="170" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.Core/ViewModels/ProfileViewModel.cs" line="171" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.WebService/HttpClientHandler/HttpClientController.cs" line="67" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.Core/ViewModels/ProfileViewModel.cs" line="301" column="1" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/UserControls/CreateRecipesView.cs" line="210" column="24" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/UserControls/CreateRecipesView.cs" line="343" column="52" />
+      <Breakpoint file="/Users/confiz-2334/Projects/ArkTrolley/ArkTrolley.iOS.Core/UserControls/CreateRecipesView.cs" line="205" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
